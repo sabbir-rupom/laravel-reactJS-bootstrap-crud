@@ -9,7 +9,7 @@ class EmployeeController extends Controller
 {
     public function index(Request $request)
     {
-        $employees = Employee::orderBy('employee_name', 'ASC')->get();
+        $employees = Employee::orderBy('employee_name', 'ASC')->paginate(10);
 
         return response()->json($employees);
     }
