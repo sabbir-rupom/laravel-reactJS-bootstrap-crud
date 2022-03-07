@@ -7,7 +7,7 @@ import Pagination from "react-js-pagination";
 import CreateModal from "./Modals/CreateModal";
 import axios from "axios";
 
-class ListTable extends Component {
+class EmployeeList extends Component {
     constructor(props) {
         super(props);
 
@@ -28,7 +28,7 @@ class ListTable extends Component {
         let self = this;
         self.setState({ loading: true });
         const response = await axios.get(
-            "get/employee/list?page=" + pageNumber
+            "api/get/employee/list?page=" + pageNumber
         );
         console.log(response.data);
         self.setState({
@@ -97,4 +97,4 @@ class ListTable extends Component {
     }
 }
 
-export default ListTable;
+export default EmployeeList;

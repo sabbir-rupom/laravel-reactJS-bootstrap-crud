@@ -76,7 +76,7 @@ class UpdateModal extends Component {
     // Update ajax employee data
     updateEmployeeData = () => {
         axios
-            .put("/update/employee/data", {
+            .put("/api/update/employee/data", {
                 employeeId: this.props.modalId,
                 employeeName: this.state.employeeName,
                 employeeSalary: this.state.employeeSalary,

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26712d00cecaa93b404fc86c8de235cc",
+    "content-hash": "c6760341f741303722c15b239a9547bb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1219,16 +1219,16 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v2.14.1",
+            "version": "v2.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "89937617fa144ddb759a740861a47c4f2fd2245b"
+                "reference": "dc5d749ba9bfcfd68d8f5c272238f88bea223e66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/89937617fa144ddb759a740861a47c4f2fd2245b",
-                "reference": "89937617fa144ddb759a740861a47c4f2fd2245b",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/dc5d749ba9bfcfd68d8f5c272238f88bea223e66",
+                "reference": "dc5d749ba9bfcfd68d8f5c272238f88bea223e66",
                 "shasum": ""
             },
             "require": {
@@ -1279,7 +1279,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2022-02-15T08:08:57+00:00"
+            "time": "2022-02-16T14:40:23+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1410,16 +1410,16 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v3.4.4",
+            "version": "v3.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "1596de849ecafc0bcc891389da939012b67f9d5c"
+                "reference": "f11d295de1508c5bb56206a620b00b6616de414c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/1596de849ecafc0bcc891389da939012b67f9d5c",
-                "reference": "1596de849ecafc0bcc891389da939012b67f9d5c",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/f11d295de1508c5bb56206a620b00b6616de414c",
+                "reference": "f11d295de1508c5bb56206a620b00b6616de414c",
                 "shasum": ""
             },
             "require": {
@@ -1465,9 +1465,9 @@
                 "ui"
             ],
             "support": {
-                "source": "https://github.com/laravel/ui/tree/v3.4.4"
+                "source": "https://github.com/laravel/ui/tree/v3.4.5"
             },
-            "time": "2022-02-10T22:38:33+00:00"
+            "time": "2022-02-21T14:59:16+00:00"
         },
         {
             "name": "league/commonmark",
