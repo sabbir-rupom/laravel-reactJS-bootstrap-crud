@@ -10,7 +10,7 @@ class DeleteModal extends Component {
 
     deleteEmployee = (id) => {
         axios
-            .delete("/api/delete/employee/" + id)
+            .delete("/api/employee/delete/" + id)
             .then(() => {
                 toast.error("Employee deleted successfully!");
 

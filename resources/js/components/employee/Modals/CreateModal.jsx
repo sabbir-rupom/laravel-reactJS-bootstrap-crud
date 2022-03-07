@@ -28,7 +28,7 @@ class CreateModal extends Component {
 
     createEmployee = () => {
         axios
-            .post("/api/create/employee", {
+            .post("/api/employee/create", {
                 name: this.state.employeeName,
                 salary: this.state.employeeSalary,
             })

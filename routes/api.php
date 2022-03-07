@@ -1,23 +1,27 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
+use Illuminate\Support\Facades\Route;
 
-Route::post('register', [AuthController::class, 'register']);;
+Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('employee/list', [EmployeeController::class, 'index'])->name('employee.list');
+
+    Route::post('employee/detail', [EmployeeController::class, 'detail'])->name('employee.detail');
+
+    Route::post('employee/create', [EmployeeController::class, 'store'])->name('employee.create');
+
+    Route::put('employee/update', [EmployeeController::class, 'update'])->name('employee.update');
+
+    Route::delete('employee/delete/{employee}', [EmployeeController::class, 'delete'])->name('employee.delete');
+
+    Route::post('logout', [AuthController::class, 'logout']);;
 });
 
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
-Route::get('/get/employee/list', [EmployeeController::class, 'index'])->name('employee.list');
-
-Route::post('/get/employee/detail', [EmployeeController::class, 'detail'])->name('employee.detail');
-
-Route::post('/create/employee', [EmployeeController::class, 'store'])->name('employee.create');
-
-Route::put('/update/employee/data', [EmployeeController::class, 'update'])->name('employee.update');
-
-Route::delete('/delete/employee/{employee}', [EmployeeController::class, 'delete'])->name('employee.delete');

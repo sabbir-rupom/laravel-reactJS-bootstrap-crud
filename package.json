@@ -26,6 +26,7 @@
     "dependencies": {
         "history": "^5.3.0",
         "react-js-pagination": "^3.0.3",
+        "react-loading-icons": "^1.0.8",
         "react-router-dom": "^6.2.2",
         "react-toastify": "^8.2.0",
         "reactstrap": "^9.0.1"

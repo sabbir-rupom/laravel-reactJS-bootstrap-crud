@@ -18,7 +18,7 @@ class TableActionButtons extends Component {
     // Getting Individual employee data
     getEmployeeDetails = (id) => {
         axios
-            .post("/api/get/employee/detail", {
+            .post("/api/employee/detail", {
                 employeeId: id,
             })
             .then((response) => {
